@@ -15,7 +15,7 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 // Route pour les produits
-app.get('/products', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index');  
 });
 
