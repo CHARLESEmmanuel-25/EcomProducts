@@ -87,7 +87,7 @@ prev.addEventListener('click', async () =>{
 // Fetch products from the server, a ecommerce api using mongo db for DB
 async function callProdutcsAPI() {
     try {
-        const response = await axios.get('http://localhost:3400/api/v1/');
+        const response = await axios.get('https://api-rest-e-com.onrender.com/api/v1/');
         const fetchedProducts = response.data;
         allProducts.push(...fetchedProducts);  // Spread operator to push individual products 
     } catch (error) {
